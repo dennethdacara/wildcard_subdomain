@@ -10,8 +10,8 @@ Route::group(['domain' => 'wildcard'], function() {
     }); 
 }); 
 
-// Route::group(['domain' => '{username}.wildcard'], function() {
-//     Route::any('/', function($username) {
-//         return 'You visit your account: '. $username; 
-//     });
-// });
+Route::group(['domain' => '{username}.wildcard'], function() {
+    Route::any('/', function($username) {
+        return 'You visit your account: '. $username; 
+    });
+});

@@ -4,7 +4,7 @@
 //     return 'My own domain';
 // }); 
 
-Route::group(['domain' => 'wildcard'], function() {
+Route::group(['domain' => '18.220.78.40'], function() {
     Route::any('/', function() {
         return 'My own domain';
     }); 

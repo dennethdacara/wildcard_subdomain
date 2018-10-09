@@ -10,7 +10,7 @@ Route::group(['domain' => 'https://www.academeportal.com'], function() {
     }); 
 }); 
 
-Route::group(['domain' => '{username}.academeportal.com'], function() {
+Route::group(['domain' => 'https://www.{username}.academeportal.com'], function() {
     Route::any('/', function($username) {
         return 'You visit your account: '. $username; 
     });
